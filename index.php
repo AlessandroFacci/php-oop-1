@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/models/movie.php'
+require_once __DIR__ . '/objects_array/db.php';
 ?>
 
 
@@ -14,7 +14,20 @@ require_once __DIR__ . '/models/movie.php'
 
 <body>
   <ul>
+    <?php foreach ($avengers_films as $movie): ?>
+    <li>
+      <?= $movie->title ?>
+      <ul>
+        <li>
+          <?= $movie->language ?>
+        </li>
+        <li>
+          <?= $movie->type  ?>
+        </li>
+      </ul>
 
+    </li>
+    <?php endforeach; ?>
   </ul>
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './../ objects_array/db.php';
+
 class Movie{
   public $title;
   public $type;

@@ -1,11 +1,7 @@
 <?php
 
-// $avengers_films =  [
-//   $avengers1,
-//   $avengers2,
-//   $avengers3,
-//   $avengers4,
-// ];
+require_once __DIR__ . './../models/movie.php';
+
 
 $avengers1 = new Movie (
 "The Avengers",
@@ -34,5 +30,12 @@ $avengers4 = new Movie (
   "3h 2m",
   "English"
 );
+
+$avengers_films =  [
+  $avengers1,
+  $avengers2,
+  $avengers3,
+  $avengers4,
+];
 
 ?>
