@@ -19,10 +19,13 @@ require_once __DIR__ . '/objects_array/db.php';
       <?= $movie->title ?>
       <ul>
         <li>
-          <?= $movie->language ?>
+          <?= $movie->type  ?>
         </li>
         <li>
-          <?= $movie->type  ?>
+          <?= $movie->duration  ?>
+        </li>
+        <li>
+          <?= $movie->language ?>
         </li>
       </ul>
 
