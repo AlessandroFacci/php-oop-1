@@ -1,5 +1,5 @@
 <?php
-
+require_once __DIR__ . './../ objects_array/db.php';
 class Movie{
   public $title;
   public $type;
@@ -9,7 +9,7 @@ class Movie{
   public function __construct(
     string $title,
     string $type,
-    float $duration,
+    string $duration,
     string $language,
     )
     {
