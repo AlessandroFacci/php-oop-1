@@ -16,10 +16,10 @@ require_once __DIR__ . '/objects_array/db.php';
   <ul>
     <?php foreach ($avengers_films as $movie): ?>
     <li>
-      <?= $movie->title ?>
+      <strong> <?= $movie->title ?> </strong>
       <ul>
         <li>
-          <?= $movie->type  ?>
+          <?=$movie->type  ?>
         </li>
         <li>
           <?= $movie->duration  ?>

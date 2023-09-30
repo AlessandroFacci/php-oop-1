@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/type.php';
 class Movie{
   public $title;
   public $type;
@@ -8,7 +9,7 @@ class Movie{
 
   public function __construct(
     string $title,
-    string $type,
+    Type $type,
     string $duration,
     string $language,
     )
