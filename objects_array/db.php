@@ -1,9 +1,9 @@
 <?php
 
 require_once __DIR__ . './../models/movie.php';
-require_once __DIR__ . './../models/type.php';
+require_once __DIR__ . './../models/genre.php';
 
-$action = new Type(
+$action = new Genre(
   'Action'
 );
 

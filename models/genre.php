@@ -1,6 +1,6 @@
 <?php
 
-class Type{
+class Genre{
   public $type;
   public function __construct(
     string $type

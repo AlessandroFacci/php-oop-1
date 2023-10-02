@@ -1,24 +1,27 @@
 <?php
 
-require_once __DIR__ . '/type.php';
+require_once __DIR__ . '/genre.php';
 class Movie{
   public $title;
-  public $type;
+  public $genre;
   public $duration;
   public $language;
 
   public function __construct(
     string $title,
-    Type $type,
+    Genre $genre,
     string $duration,
     string $language,
     )
     {
     $this->title = $title;
-    $this->type = $type;
+    $this->genre = $genre;
     $this->duration = $duration;
     $this->language = $language;
   }
+
+ 
+
 }
 
 ?>
