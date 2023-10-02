@@ -32,6 +32,31 @@ require_once __DIR__ . '/objects_array/db.php';
     </li>
     <?php endforeach; ?>
   </ul>
+
+  <hr>
+
+  <ul>
+    <?php foreach ($marvel_series as $serie): ?>
+    <li>
+      <strong> <?= $serie->title ?> </strong>
+      <ul>
+        <li>
+          <?=$serie->aired_from_year   ?>
+        </li>
+        <li>
+          <?= $serie->aired_to_year  ?>
+        </li>
+        <li>
+          <?= $serie->number_of_episodes ?>
+        </li>
+        <li>
+          <?= $serie->number_of_stagioni ?>
+        </li>
+      </ul>
+
+    </li>
+    <?php endforeach; ?>
+  </ul>
 </body>
 
 </html>
