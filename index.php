@@ -16,19 +16,18 @@ require_once __DIR__ . '/objects_array/db.php';
   <ul>
     <?php foreach ($avengers_films as $movie): ?>
     <li>
-      <strong> <?= $movie->title ?> </strong>
+      <strong>Titolo:</strong> <?= $movie->title ?>
       <ul>
         <li>
-          <?=$movie->genre->type   ?>
+          <strong>Genere:</strong> <?=$movie->genre->type   ?>
         </li>
         <li>
-          <?= $movie->duration  ?>
+          <strong>Durata:</strong> <?= $movie->duration  ?>
         </li>
         <li>
-          <?= $movie->language ?>
+          <strong>Lingua:</strong> <?= $movie->language ?>
         </li>
       </ul>
-
     </li>
     <?php endforeach; ?>
   </ul>
@@ -38,19 +37,19 @@ require_once __DIR__ . '/objects_array/db.php';
   <ul>
     <?php foreach ($marvel_series as $serie): ?>
     <li>
-      <strong> <?= $serie->title ?> </strong>
+      <strong>Titolo: </strong><?= $serie->title ?>
       <ul>
         <li>
-          <?=$serie->aired_from_year   ?>
+          <strong>Anno di messa in onda del primo episodio:</strong> <?=$serie->aired_from_year   ?>
         </li>
         <li>
-          <?= $serie->aired_to_year  ?>
+          <strong>Anno di messa in onda dell'ultimo episodio:</strong> <?= $serie->aired_to_year  ?>
         </li>
         <li>
-          <?= $serie->number_of_episodes ?>
+          <strong>Numero di episodi:</strong> <?= $serie->number_of_episodes ?>
         </li>
         <li>
-          <?= $serie->number_of_stagioni ?>
+          <strong>Numero di stagioni:</strong> <?= $serie->number_of_stagioni ?>
         </li>
       </ul>
 
