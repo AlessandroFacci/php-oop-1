@@ -4,6 +4,11 @@ require_once __DIR__ . './../models/movie.php';
 require_once __DIR__ . './../models/genre.php';
 require_once __DIR__ . './../models/production.php';
 
+
+$marvel_studios = new Production(
+  'Marvel Studios'
+);
+
 $action = new Genre(
   'Action'
 );
