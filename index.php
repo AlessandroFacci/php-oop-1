@@ -19,7 +19,25 @@ require_once __DIR__ . '/models/production.php';
 </head>
 
 <body>
-  <ul>
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-4">
+        <div class="card text-bg-primary">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <ul>
     <?php foreach ($avengers_films as $movie): ?>
     <li>
       <strong>Titolo:</strong> <?= $movie->title ?>
@@ -71,7 +89,7 @@ require_once __DIR__ . '/models/production.php';
       <?= $movie->getDetails() ?>
     </li>
     <?php endforeach; ?>
-  </ul>
+  </ul> -->
 </body>
 
 </html>
