@@ -25,6 +25,9 @@ class TvSeries extends Production {
   }
  
 
+  public function getDetails(){
+    return "$this->title - $this->aired_from_year - $this->aired_to_year - $this->number_of_episodes - $this->number_of_stagioni" ;
+  }
 }
 
 ?>

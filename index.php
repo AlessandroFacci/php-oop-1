@@ -1,5 +1,8 @@
 <?php
 require_once __DIR__ . '/objects_array/db.php';
+require_once __DIR__ . '/models/production.php';
+
+
 ?>
 
 
@@ -53,6 +56,16 @@ require_once __DIR__ . '/objects_array/db.php';
         </li>
       </ul>
 
+    </li>
+    <?php endforeach; ?>
+  </ul>
+
+  <hr>
+
+  <ul>
+    <?php foreach ($avengers_films as $movie): ?>
+    <li>
+      <?= $movie->getDetails() ?>
     </li>
     <?php endforeach; ?>
   </ul>

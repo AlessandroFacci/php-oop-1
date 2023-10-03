@@ -23,7 +23,10 @@ class Movie extends Production {
     $this->language = $language;
   }
 
- 
+
+  public function getDetails(){
+    return "$this->title" . ' ' . $this->genre->type . " - $this->duration - $this->language" ;
+  }
 
 }
 
