@@ -25,9 +25,13 @@ class Movie extends Production {
 
 
   public function getDetails(){
-    return "$this->title" . ' ' . $this->genre->type . " - $this->duration - $this->language" ;
+    return "
+    <strong>Titolo:</strong> $this->title <br>
+    <strong>Genere:</strong> {$this->genre->type} <br>
+    <strong>Durata:</strong> $this->duration <br>
+    <strong>Lingua:</strong> $this->language <br>
+    ";
   }
-
 }
 
 

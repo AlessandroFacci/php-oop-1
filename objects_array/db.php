@@ -116,4 +116,18 @@ $avengers_films =  [
   $avengers4,
 ];
 
+$marvel_productions = [
+  $the_defenders,
+  $iron_fist,
+  $avengers1,
+  $daredevil, 
+  $luke_cage,
+  $avengers2,
+  $jessica_jones,
+  $the_punisher,
+  $avengers3,
+  $agents_of_schiels,
+  $avengers4,
+]
+
 ?>

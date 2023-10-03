@@ -19,19 +19,17 @@ require_once __DIR__ . '/models/production.php';
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row g-3">
-      <div class="col-4">
-        <div class="card text-bg-primary">
-          <div class="card-header">Header</div>
+      <?php foreach ($marvel_productions as $production): ?>
+      <div class="col-3">
+        <div class="card text-bg-primary" style="min-height: 10rem;">
           <div class="card-body">
-            <h5 class="card-title">Primary card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <?=$production->getDetails()?>
           </div>
         </div>
-
       </div>
+      <?php endforeach; ?>
     </div>
   </div>
 
